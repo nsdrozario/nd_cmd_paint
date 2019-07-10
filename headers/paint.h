@@ -1,24 +1,24 @@
-#include <iostream>
-#include <windows.h>
-#include <fstream>
+#ifndef paint_h 
+#define paint_h
+namespace nd_cmd_paint {
 
-namespace paint_program {
+     class Pixel {
 
-    class PaintPixel {
-
- 
         public: 
-            int r;
-            int g;
-            int b;
 
+            int color; // Windows uses a single integer to represent colors in the command line
+            int x;
+            int y;
+
+            construct(int x, int y, int c) {
+               color = c ;
+               x = x;
+               y = y;
+            }
     };
 
-    void draw_pixel_screen(int x, int y) {
-
-    }
+    void draw_pixel_screen(Pixel p);
 
 
 } 
-
-
+#endif

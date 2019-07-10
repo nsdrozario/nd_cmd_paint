@@ -1,36 +1,29 @@
-#include <iostream>
-#include <fstream>
-
-namespace paint_program {
+#ifndef file_h 
+#define file_h
+namespace nd_cmd_paint {
     class image_data {
 
     private:
 
         vector<vector<int>> data;
 
-
     public:
 
         int size_x;
         int size_y;
 
-        construct(int sx, int sy) {
-            
-        }
+        image_data(int sx, int sy);
 
-        int get_pixel(int x, int y) {
+        Pixel get_pixel(int x, int y);
 
-        }
+        void place_pixel(int x, int y, int c);
 
-        void place_pixel(int x, int y) {
-
-        }
+        void store_in_file(char *file);
 };
 
 }
 
-
+#endif
     
 
 
-    
