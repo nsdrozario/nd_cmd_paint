@@ -10,14 +10,14 @@ namespace nd_cmd_paint {
             int x;
             int y;
 
-            construct(int x, int y, int c) {
-               color = c ;
+            Pixel (int x, int y, int c) {
+               color = c;
                x = x;
                y = y;
             }
     };
 
-    void draw_pixel_screen(Pixel p);
+    void draw_pixel_screen(nd_cmd_paint::Pixel p);
 
 
 } 
