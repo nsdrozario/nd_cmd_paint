@@ -1,7 +1,6 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include <windows.h>
 #include "headers/paint.h"
 #include "headers/file.h"
 #include <fstream>
