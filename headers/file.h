@@ -2,18 +2,17 @@
 #define file_h
 
 #include <vector>
+
 namespace nd_cmd_paint {
+    
     class image_data {
 
-    private:
-
-        std::vector< std::vector<int> > data;
-
     public:
-
+        image_data();
+        
         int size_x;
         int size_y;
-
+        std::vector< std::vector<int> > data;
         image_data(int sx, int sy);
 
         nd_cmd_paint::Pixel* get_pixel(int x, int y);
