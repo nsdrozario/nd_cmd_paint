@@ -9,14 +9,9 @@ File structure and specifications are inside further documentation.
 
 This project is meant to be compiled with mingw32-gcc-g++ 6.3.0-1. 
 
-The command for building object files is:
-
- `g++ paint.cpp ndcmd_img.cpp -c`
-
-It is recommended to move the object files to a different directory, in order to link the object files together using this command:
-
-`g++ paint.o ndcmd_img.o -o nd_cmd_paint.exe`
-
+The command for building the project is:
+ `g++ paint.cpp ndcmd_img.cpp -o nd_cmd_paint.exe -static-libstdc++ -std=c++11`
+ 
 
 
 
