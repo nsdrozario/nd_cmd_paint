@@ -1,13 +1,13 @@
 # ND Command Line Paint
 
-This program displays and creates low-resolution images in the Windows command line.
+This program displays and creates low-resolution images in the command line. This program is meant to run on Linux environments.
 It reads a custom file format: `ndcmd_img`.
 
 File structure and specifications are inside further documentation.
  
 ## Building
 
-This project is meant to be compiled with mingw32-gcc-g++ 6.3.0-1. 
+This project is meant to be compiled with g++. 
 
 The command for building the project is:
 
